@@ -841,6 +841,15 @@
   <data name="PropertyShowInfos" xml:space="preserve">
     <value>显示信息</value>
   </data>
+  <data name="PropertyShowHealth" xml:space="preserve">
+    <value>显示生命值</value>
+  </data>
+  <data name="PropertyShowDistance" xml:space="preserve">
+    <value>显示距离</value>
+  </data>
+  <data name="PropertyShowWeapon" xml:space="preserve">
+    <value>显示武器</value>
+  </data>
   <data name="PropertyShowMap" xml:space="preserve">
     <value>显示地图</value>
   </data>
