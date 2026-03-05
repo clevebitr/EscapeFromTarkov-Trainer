@@ -2196,6 +2196,33 @@ namespace EFT.Trainer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show health.
+        /// </summary>
+        internal static string PropertyShowHealth {
+            get {
+                return ResourceManager.GetString("PropertyShowHealth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show distance.
+        /// </summary>
+        internal static string PropertyShowDistance {
+            get {
+                return ResourceManager.GetString("PropertyShowDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show weapon.
+        /// </summary>
+        internal static string PropertyShowWeapon {
+            get {
+                return ResourceManager.GetString("PropertyShowWeapon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Show health-damage.
         /// </summary>
         internal static string PropertyShowHealthDamage {
