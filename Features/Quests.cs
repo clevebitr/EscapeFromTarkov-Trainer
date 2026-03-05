@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 using Comfort.Common;
 using EFT.Counters;
@@ -9,6 +10,7 @@ using EFT.Trainer.Extensions;
 using EFT.Trainer.Properties;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 #nullable enable
 
@@ -27,6 +29,18 @@ internal class Quests : PointOfInterests
 	public override bool Enabled { get; set; } = false;
 	public override Color GroupingColor => Color;
 
+	private readonly ConcurrentDictionary<string, ExperienceTrigger[]> _experienceTriggerCache = [];
+	private readonly ConcurrentDictionary<string, PlaceItemTrigger[]> _placeItemTriggerCache = [];
+	private static bool _refreshLookupTables = true;
+
+#pragma warning disable IDE0060
+	[UsedImplicitly]
+	protected static void OnConditionChangedHandlerPostfix(QuestClass conditional)
+	{
+		_refreshLookupTables = true;
+	}
+#pragma warning restore IDE0060
+
 	public override void RefreshData(List<PointOfInterest> data)
 	{
 		var world = Singleton<GameWorld>.Instance;
@@ -42,6 +56,12 @@ internal class Quests : PointOfInterests
 			return;
 
 		var profile = player.Profile;
+		if (profile == null)
+			return;
+
+		var scene = SceneManager.GetActiveScene();
+		if (!scene.isLoaded)
+			return;
 
 		var startedQuests = profile.QuestsData
 			.Where(q => q.Status is EQuestStatus.Started && q.Template != null)
@@ -50,14 +70,27 @@ internal class Quests : PointOfInterests
 		if (!startedQuests.Any())
 			return;
 
-		RefreshPlaceOrRepairItemLocations(startedQuests, profile, data);
-		RefreshVisitPlaceLocations(startedQuests, profile, data);
+		if (_refreshLookupTables)
+		{
+			_experienceTriggerCache.Clear();
+			_placeItemTriggerCache.Clear();
+
+			_refreshLookupTables = false;
+		}
+
+		RefreshPlaceOrRepairItemLocations(scene, startedQuests, profile, data);
+		RefreshVisitPlaceLocations(scene, startedQuests, profile, data);
 		RefreshFindItemLocations(startedQuests, world, data);
 	}
 
-	private void RefreshVisitPlaceLocations(QuestDataClass[] startedQuests, Profile profile, List<PointOfInterest> records)
+	private void RefreshVisitPlaceLocations(Scene scene, QuestDataClass[] startedQuests, Profile profile, List<PointOfInterest> records)
 	{
-		var triggers = FindObjectsOfType<ExperienceTrigger>();
+		if (!_experienceTriggerCache.TryGetValue(scene.name, out var triggers))
+		{
+			triggers = FindObjectsOfType<ExperienceTrigger>();
+			if (triggers.Length > 0)
+				_experienceTriggerCache[scene.name] = triggers;
+		}
 
 		foreach (var quest in startedQuests)
 		{
@@ -112,14 +145,19 @@ internal class Quests : PointOfInterests
 		}
 	}
 
-	private void RefreshPlaceOrRepairItemLocations(QuestDataClass[] startedQuests, Profile profile, List<PointOfInterest> records)
+	private void RefreshPlaceOrRepairItemLocations(Scene scene, QuestDataClass[] startedQuests, Profile profile, List<PointOfInterest> records)
 	{
 		var allPlayerItems = profile
 			.Inventory
 			.GetPlayerItems()
 			.ToArray();
 
-		var triggers = FindObjectsOfType<PlaceItemTrigger>();
+		if (!_placeItemTriggerCache.TryGetValue(scene.name, out var triggers))
+		{
+			triggers = FindObjectsOfType<PlaceItemTrigger>();
+			if (triggers.Length > 0)
+				_placeItemTriggerCache[scene.name] = triggers;
+		}
 
 		foreach (var quest in startedQuests)
 		{
@@ -153,5 +191,13 @@ internal class Quests : PointOfInterests
 		poi.Owner = null;
 
 		records.Add(poi);
+	}
+
+	protected override void UpdateWhenEnabled()
+	{
+		HarmonyPatchOnce(harmony =>
+		{
+			HarmonyPostfix(harmony, typeof(AbstractQuestControllerClass), nameof(AbstractQuestControllerClass.OnConditionChangedHandler), nameof(OnConditionChangedHandlerPostfix));
+		});
 	}
 }

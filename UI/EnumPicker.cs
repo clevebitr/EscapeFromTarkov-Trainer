@@ -11,8 +11,6 @@ public class EnumPicker<T>(T value) : Picker<T>(value) where T : struct, IConver
 	private Rect _windowRect = new(20, 20, 200, 500);
 	private Vector2 _scrollViewPosition = new();
 
-	public override bool IsSelected { get; protected set; } = false;
-
 	private T[]? _candidates = null;
 
 	public T[] Candidates
@@ -58,7 +56,7 @@ public class EnumPicker<T>(T value) : Picker<T>(value) where T : struct, IConver
 				continue;
 
 			IsSelected = true;
-			_value = candidate;
+			Value = candidate;
 		}
 
 		GUILayout.EndScrollView();

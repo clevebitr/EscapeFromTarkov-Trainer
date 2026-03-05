@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -71,8 +71,17 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(EFTManagedPath)\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NLog">
-      <HintPath>$(EFTManagedPath)\NLog.dll</HintPath>
+    <Reference Include="ItemTemplate.Types">
+      <HintPath>$(EFTManagedPath)\ItemTemplate.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>$(EFTManagedPath)\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(EFTManagedPath)\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonExtensions">
+      <HintPath>$(EFTManagedPath)\CommonExtensions.dll</HintPath>
     </Reference>
     <!-- Unity -->
     <Reference Include="UnityEngine.AssetBundleModule">
@@ -88,18 +97,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(EFTManagedPath)\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>$(EFTManagedPath)\UnityEngine.TextCoreModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>$(EFTManagedPath)\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
-    <Reference Include="ItemTemplate.Types">
-      <HintPath>$(EFTManagedPath)\ItemTemplate.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="DissonanceVoip">
-      <HintPath>$(EFTManagedPath)\DissonanceVoip.dll</HintPath>
-    </Reference>
+    <!-- Optional -->
     <Reference Include="0Harmony">
       <HintPath>Installer\Resources\0Harmony.dll</HintPath>
     </Reference>
@@ -114,6 +115,7 @@
     <Compile Include="Configuration\ColorConverter.cs" />
     <Compile Include="Configuration\ConfigurationManager.cs" />
     <Compile Include="Configuration\ConfigurationPropertyAttribute.cs" />
+    <Compile Include="Configuration\EnumConverter.cs" />
     <Compile Include="Configuration\KeyCodeConverter.cs" />
     <Compile Include="Configuration\OrderedProperty.cs" />
     <Compile Include="Configuration\TrackedItemConverter.cs" />
@@ -151,7 +153,6 @@
     <Compile Include="Extensions\ItemTemplateExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Extensions\LootItemExtensions.cs" />
-    <Compile Include="Extensions\LootableContainerExtensions.cs" />
     <Compile Include="Extensions\NotNullWhenAttribute.cs" />
     <Compile Include="Extensions\PlayerExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
@@ -197,6 +198,7 @@
     <Compile Include="Features\Radar.cs" />
     <Compile Include="Features\SceneDumper.cs" />
     <Compile Include="Features\ShaderCache.cs" />
+    <Compile Include="Features\ShaderProperties.cs" />
     <Compile Include="Features\Speed.cs" />
     <Compile Include="Features\Health.cs" />
     <Compile Include="Features\Stamina.cs" />
@@ -213,9 +215,6 @@
     <Compile Include="Features\Weather.cs" />
     <Compile Include="Features\QuickThrow.cs" />
     <Compile Include="Features\WorldInteractiveObjects.cs" />
-    <Compile Include="Model\ReflectionWrapper.cs" />
-    <Compile Include="Model\ActiveHealthControllerWrapper.cs" />
-    <Compile Include="Model\ShotWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Strings.fr.Designer.cs">
       <DependentUpon>Strings.fr.resx</DependentUpon>
@@ -232,18 +231,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.zh-cn.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Strings.jp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.jp.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Picker.cs" />
     <Compile Include="UI\EnumPicker.cs" />
     <Compile Include="UI\ColorPicker.cs" />
     <Compile Include="UI\ColorUtil.cs" />
     <Compile Include="UI\Render.cs" />
-    <Compile Include="EFTTarget.cs" />
     <Compile Include="KnownTemplateIds.cs" />
     <Compile Include="Loader.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.21.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.25.0" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Strings.fr.resx">
@@ -259,6 +262,10 @@
     <EmbeddedResource Include="Properties\Strings.zh-cn.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.zh-cn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.jp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.jp.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,5 @@
-﻿using EFT.InventoryLogic;
-using EFT.Trainer.ConsoleCommands;
+﻿using System.Diagnostics.CodeAnalysis;
+using EFT.InventoryLogic;
 using EFT.Trainer.Properties;
 using JetBrains.Annotations;
 using static EFT.Player;
@@ -17,6 +17,7 @@ internal class Examine : ToggleFeature
 	public override bool Enabled { get; set; } = false;
 
 	[UsedImplicitly]
+	[SuppressMessage("ReSharper", "InconsistentNaming")]
 	protected static bool ExaminedPrefix(ref bool __result)
 	{
 		var feature = FeatureFactory.GetFeature<Examine>();
