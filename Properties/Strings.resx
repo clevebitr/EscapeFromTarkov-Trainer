@@ -840,6 +840,15 @@ Colors are stored as an array of 'RGBA' floats</value>
   <data name="PropertyShowInfos" xml:space="preserve">
     <value>Show infos</value>
   </data>
+  <data name="PropertyShowHealth" xml:space="preserve">
+    <value>Show health</value>
+  </data>
+  <data name="PropertyShowDistance" xml:space="preserve">
+    <value>Show distance</value>
+  </data>
+  <data name="PropertyShowWeapon" xml:space="preserve">
+    <value>Show weapon</value>
+  </data>
   <data name="PropertyShowMap" xml:space="preserve">
     <value>Show map</value>
   </data>
