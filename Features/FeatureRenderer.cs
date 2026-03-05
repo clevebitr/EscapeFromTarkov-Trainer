@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -21,7 +21,7 @@ internal abstract class FeatureRenderer : ToggleFeature
 	protected const float DefaultY = 20f;
 
 	private static GUIStyle LabelStyle => new() { wordWrap = false, normal = { textColor = Color.white }, margin = new RectOffset(8, 0, 8, 0), fixedWidth = 150f, stretchWidth = false };
-	private static GUIStyle DescriptionStyle => new() { wordWrap = true, normal = { textColor = Color.white }, margin = new RectOffset(8, 0, 8, 0), stretchWidth = true };
+	private static GUIStyle DescriptionStyle => new() { wordWrap = true, normal = { textColor = Color.white }, margin = new RectOffset(8, 0, 8, 0), stretchWidth = true, fontSize = 14 };
 	private static GUIStyle BoxStyle => new(GUI.skin.box) { normal = { background = Texture2D.whiteTexture, textColor = Color.white } };
 
 	protected void SetupWindowCoordinates()
@@ -194,7 +194,7 @@ internal abstract class FeatureRenderer : ToggleFeature
 
 		GUILayout.BeginVertical();
 
-		GUILayout.Label($"<i><b>{feature.Description}</b></i>\n", DescriptionStyle);
+		GUILayout.Label($"{feature.Description}\n", DescriptionStyle);
 
 		foreach (var property in orderedProperties)
 			RenderFeatureProperty(feature, property);
