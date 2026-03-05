@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -528,6 +528,18 @@ Colors are stored as an array of 'RGBA' floats</value>
   <data name="FeaturePlayersFormat" xml:space="preserve">
     <value>{0} {1}% {2}</value>
     <comment>Weapon name, health %, distance</comment>
+  </data>
+  <data name="FeaturePlayersWeaponFormat" xml:space="preserve">
+    <value>W:{0}</value>
+    <comment>Weapon name</comment>
+  </data>
+  <data name="FeaturePlayersHealthFormat" xml:space="preserve">
+    <value>HP:{0}%</value>
+    <comment>Health %</comment>
+  </data>
+  <data name="FeaturePlayersDistanceFormat" xml:space="preserve">
+    <value>[{0}m]</value>
+    <comment>Distance</comment>
   </data>
   <data name="FeaturePlayersName" xml:space="preserve">
     <value>players</value>

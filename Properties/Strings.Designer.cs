@@ -970,7 +970,7 @@ namespace EFT.Trainer.Properties {
                 return ResourceManager.GetString("FeatureGameStateName", resourceCulture);
             }
         }
-        
+     
         /// <summary>
         ///   Looks up a localized string similar to Stop bots from seeing you..
         /// </summary>
@@ -1301,6 +1301,33 @@ namespace EFT.Trainer.Properties {
         internal static string FeaturePlayersFormat {
             get {
                 return ResourceManager.GetString("FeaturePlayersFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to W:{0}.
+        /// </summary>
+        internal static string FeaturePlayersWeaponFormat {
+            get {
+                return ResourceManager.GetString("FeaturePlayersWeaponFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HP:{0}%.
+        /// </summary>
+        internal static string FeaturePlayersHealthFormat {
+            get {
+                return ResourceManager.GetString("FeaturePlayersHealthFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}m].
+        /// </summary>
+        internal static string FeaturePlayersDistanceFormat {
+            get {
+                return ResourceManager.GetString("FeaturePlayersDistanceFormat", resourceCulture);
             }
         }
         

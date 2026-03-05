@@ -88,6 +88,15 @@ internal class Players : ToggleFeature
 	[ConfigurationProperty(Order = 40)]
 	public bool ShowInfos { get; set; } = true;
 
+	[ConfigurationProperty(Order = 41)]
+	public bool ShowWeapon { get; set; } = true;
+
+	[ConfigurationProperty(Order = 42)]
+	public bool ShowHealth { get; set; } = true;
+
+	[ConfigurationProperty(Order = 43)]
+	public bool ShowDistance { get; set; } = true;
+
 	[ConfigurationProperty(Order = 50)]
 	public bool ShowSkeletons { get; set; } = false;
 
@@ -228,15 +237,34 @@ internal class Players : ToggleFeature
 			if (!ShowInfos || ennemyHealthController is not { IsAlive: true })
 				continue;
 
-			var bodyPartHealth = ennemyHealthController.GetBodyPartHealth(EBodyPart.Common);
-			var currentPlayerHealth = bodyPartHealth.Current;
-			var maximumPlayerHealth = bodyPartHealth.Maximum;
+			var infoParts = new List<string>();
 
-			var weaponText = ennemyHandController != null && ennemyHandController.Item is Weapon weapon ? weapon.ShortName.Localized() : string.Empty;
-			var distanceText = string.Format(Strings.FeaturePointOfInterestsDistanceFormat, distance);
-			var infoText = string.Format(Strings.FeaturePlayersFormat, weaponText, Mathf.Round(currentPlayerHealth * 100 / maximumPlayerHealth), distanceText).Trim();
+			if (ShowWeapon)
+			{
+				var weaponText = ennemyHandController != null && ennemyHandController.Item is Weapon weapon ? weapon.ShortName.Localized() : string.Empty;
+				if (!string.IsNullOrEmpty(weaponText))
+					infoParts.Add(string.Format(Strings.FeaturePlayersWeaponFormat, weaponText));
+			}
 
-			Render.DrawString(new Vector2(boxPositionX, boxPositionY - 20f), infoText, playerColors.InfoColor, false);
+			if (ShowHealth)
+			{
+				var bodyPartHealth = ennemyHealthController.GetBodyPartHealth(EBodyPart.Common);
+				var currentPlayerHealth = bodyPartHealth.Current;
+				var maximumPlayerHealth = bodyPartHealth.Maximum;
+				var healthPercent = Mathf.Round(currentPlayerHealth * 100 / maximumPlayerHealth);
+				infoParts.Add(string.Format(Strings.FeaturePlayersHealthFormat, healthPercent));
+			}
+
+			if (ShowDistance)
+			{
+				infoParts.Add(string.Format(Strings.FeaturePlayersDistanceFormat, distance));
+			}
+
+			if (infoParts.Count > 0)
+			{
+				var infoText = string.Join(" ", infoParts);
+				Render.DrawString(new Vector2(boxPositionX, boxPositionY - 20f), infoText, playerColors.InfoColor, false);
+			}
 		}
 	}
 
