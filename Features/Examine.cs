@@ -22,10 +22,34 @@ internal class Examine : ToggleFeature
 	{
 		var feature = FeatureFactory.GetFeature<Examine>();
 		if (feature == null || !feature.Enabled)
-			return true; // keep using original code, we are not enabled
+			return true;
 
 		__result = true;
-		return false; // skip the original code and all other prefix methods 
+		return false;
+	}
+
+	[UsedImplicitly]
+	[SuppressMessage("ReSharper", "InconsistentNaming")]
+	protected static bool IsSearchedPrefix(ref bool __result)
+	{
+		var feature = FeatureFactory.GetFeature<Examine>();
+		if (feature == null || !feature.Enabled)
+			return true;
+
+		__result = true;
+		return false;
+	}
+
+	[UsedImplicitly]
+	[SuppressMessage("ReSharper", "InconsistentNaming")]
+	protected static bool IsItemKnownPrefix(ref bool __result)
+	{
+		var feature = FeatureFactory.GetFeature<Examine>();
+		if (feature == null || !feature.Enabled)
+			return true;
+
+		__result = true;
+		return false;
 	}
 
 #pragma warning disable IDE0060
@@ -34,9 +58,8 @@ internal class Examine : ToggleFeature
 	{
 		var feature = FeatureFactory.GetFeature<Examine>();
 		if (feature == null || !feature.Enabled)
-			return true; // keep using original code, we are not enabled
+			return true;
 
-		// this will make the game use the passthrough type implementing IPlayerSearchController, ISearchController with all items known and searched
 		examined = true;
 		return true;
 	}
@@ -49,6 +72,8 @@ internal class Examine : ToggleFeature
 			HarmonyPrefix(harmony, typeof(Profile), nameof(Profile.Examined), nameof(ExaminedPrefix), [typeof(MongoID)]);
 			HarmonyPrefix(harmony, typeof(Profile), nameof(Profile.Examined), nameof(ExaminedPrefix), [typeof(Item)]);
 			HarmonyConstructorPrefix(harmony, typeof(SinglePlayerInventoryController), nameof(SinglePlayerInventoryControllerConstructorPrefix), [typeof(Player), typeof(Profile), typeof(bool), typeof(bool)]);
+			HarmonyPrefix(harmony, typeof(GClass2235), nameof(GClass2235.IsSearched), nameof(IsSearchedPrefix), [typeof(SearchableItemItemClass)]);
+			HarmonyPrefix(harmony, typeof(PlayerSearchControllerClass), nameof(PlayerSearchControllerClass.IsItemKnown), nameof(IsItemKnownPrefix), [typeof(Item), typeof(ItemAddress)]);
 		});
 	}
 }

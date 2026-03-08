@@ -169,7 +169,7 @@
   </data>
   <data name="CommandSaveHeader" xml:space="preserve">
     <value>在更新此文件时要小心 :)
-对于键码，请使用https：//docs.unity3d.com/ScriptReference/KeyCode.html
+对于键码，请使用https://docs.unity3d.com/ScriptReference/KeyCode.html
 颜色以“RGBA”浮点数数组的形式存储。</value>
   </data>
   <data name="CommandSaveName" xml:space="preserve">
@@ -346,7 +346,7 @@
     <value>无限弹药</value>
   </data>
   <data name="FeatureAutomaticGunDescription" xml:space="preserve">
-    <value>强制所有武器(甚至是栓动步枪)使用具有可定制射击速度的自动射击模式。</value>
+    <value>强制所有武器使用具有可定制射击速度的自动射击模式。</value>
   </data>
   <data name="FeatureAutomaticGunName" xml:space="preserve">
     <value>全自动射击</value>
@@ -440,7 +440,7 @@
     <value>手榴弹轮廓</value>
   </data>
   <data name="FeatureHealthDescription" xml:space="preserve">
-    <value>生命值保持满血状态，免疫任何伤害(即使是摔倒时)，具有保持能量和水分在最大限度功能</value>
+    <value>使你的生命值保持在最佳状态，免疫任何伤害，同时不会饥饿和口渴</value>
   </data>
   <data name="FeatureHealthName" xml:space="preserve">
     <value>无敌</value>
@@ -456,10 +456,10 @@
     <comment>X, y</comment>
   </data>
   <data name="FeatureHudDescription" xml:space="preserve">
-    <value>HUD(指南针，剩余弹药，射击模式，坐标)。</value>
+    <value>抬头显示(指南针，剩余弹药，射击模式，坐标)。</value>
   </data>
   <data name="FeatureHudName" xml:space="preserve">
-    <value>HUD</value>
+    <value>抬头显示</value>
   </data>
   <data name="FeatureHudSeparator" xml:space="preserve">
     <value> - </value>
@@ -493,19 +493,19 @@
     <value>夜视</value>
   </data>
   <data name="FeatureNoCollisionDescription" xml:space="preserve">
-    <value>没有物理碰撞，因此你不会受到子弹、手榴弹和铁丝网的伤害</value>
+    <value>使你没有物理碰撞，因此你不会受到子弹、手榴弹和铁丝网的伤害</value>
   </data>
   <data name="FeatureNoCollisionName" xml:space="preserve">
     <value>无物理碰撞</value>
   </data>
   <data name="FeatureNoMalfunctionsDescription" xml:space="preserve">
-    <value>没有武器故障:没有哑火、供弹故障。没有枪膛堵塞或武器过热</value>
+    <value>武器不会故障：不会哑火、供弹故障；不会枪膛堵塞或武器过热。</value>
   </data>
   <data name="FeatureNoMalfunctionsName" xml:space="preserve">
     <value>无武器故障</value>
   </data>
   <data name="FeatureNoRecoilDescription" xml:space="preserve">
-    <value>武器没有后坐力。</value>
+    <value>开启时，武器没有后坐力。</value>
   </data>
   <data name="FeatureNoRecoilName" xml:space="preserve">
     <value>无后坐力</value>
@@ -635,7 +635,7 @@
     <value>天气晴朗</value>
   </data>
   <data name="FeatureWorldInteractiveObjectsDescription" xml:space="preserve">
-    <value>门/钥匙卡读卡器/汽车开锁；对容器按下绑定的按键，强制开锁。(即使你没有钥匙)</value>
+    <value>门/钥匙卡读卡器/汽车开锁；对容器按下绑定的按键，强制开锁。</value>
   </data>
   <data name="FeatureWorldInteractiveObjectsName" xml:space="preserve">
     <value>开锁</value>
@@ -668,7 +668,7 @@
     <value>调整时间</value>
   </data>
   <data name="PropertyColor" xml:space="preserve">
-    <value>颜色</value>
+    <value>骨架颜色颜色</value>
   </data>
   <data name="PropertyCultistColors" xml:space="preserve">
     <value>邪教徒颜色</value>
@@ -749,10 +749,10 @@
     <value>移动速度</value>
   </data>
   <data name="PropertyNotEligibleColor" xml:space="preserve">
-    <value>不符合条件颜色</value>
+    <value>不符合条件的颜色</value>
   </data>
   <data name="PropertyNotShootableColors" xml:space="preserve">
-    <value>不可射击时颜色</value>
+    <value>不可射击时的颜色</value>
   </data>
   <data name="PropertyRadarBackground" xml:space="preserve">
     <value>雷达边框颜色</value>
@@ -797,10 +797,10 @@
     <value>在尸体内搜索</value>
   </data>
   <data name="PropertyShootableColors" xml:space="preserve">
-    <value>可射击时颜色</value>
+    <value>可射击时的颜色</value>
   </data>
   <data name="PropertyShowArmorDamage" xml:space="preserve">
-    <value>显示对防弹衣伤害</value>
+    <value>显示对防弹衣造成的伤害</value>
   </data>
   <data name="PropertyShowBosses" xml:space="preserve">
     <value>显示 Boss</value>
@@ -860,7 +860,7 @@
     <value>显示不符合条件的</value>
   </data>
   <data name="PropertyShowNotShootable" xml:space="preserve">
-    <value>显示不可射击颜色</value>
+    <value>显示不可射击时的边框颜色</value>
   </data>
   <data name="PropertyShowPlayers" xml:space="preserve">
     <value>显示玩家</value>
@@ -881,10 +881,10 @@
     <value>显示Scavs</value>
   </data>
   <data name="PropertyShowShootable" xml:space="preserve">
-    <value>显示可射击颜色</value>
+    <value>显示可射击时的边框颜色</value>
   </data>
   <data name="PropertyShowSkeletons" xml:space="preserve">
-    <value>显示骨骼</value>
+    <value>显示人物骨骼</value>
   </data>
   <data name="PropertySilentAim" xml:space="preserve">
     <value>自动开火</value>
@@ -899,7 +899,7 @@
     <value>大小</value>
   </data>
   <data name="PropertySkeletonThickness" xml:space="preserve">
-    <value>骨架厚度</value>
+    <value>人物骨架厚度</value>
   </data>
   <data name="PropertySmoothness" xml:space="preserve">
     <value>平滑度</value>
