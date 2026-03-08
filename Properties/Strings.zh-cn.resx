@@ -860,7 +860,7 @@
     <value>显示不符合条件的</value>
   </data>
   <data name="PropertyShowNotShootable" xml:space="preserve">
-    <value>显示不可射击时的边框颜色</value>
+    <value>显示不可射击时的颜色</value>
   </data>
   <data name="PropertyShowPlayers" xml:space="preserve">
     <value>显示玩家</value>
@@ -881,7 +881,7 @@
     <value>显示Scavs</value>
   </data>
   <data name="PropertyShowShootable" xml:space="preserve">
-    <value>显示可射击时的边框颜色</value>
+    <value>显示可射击时的颜色</value>
   </data>
   <data name="PropertyShowSkeletons" xml:space="preserve">
     <value>显示人物骨骼</value>
