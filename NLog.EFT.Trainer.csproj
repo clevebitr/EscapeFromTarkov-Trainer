@@ -125,6 +125,7 @@
     <Compile Include="ConsoleCommands\BaseTrackCommand.cs" />
     <Compile Include="ConsoleCommands\BaseTrackListCommand.cs" />
     <Compile Include="ConsoleCommands\BuiltInCommand.cs" />
+    <Compile Include="ConsoleCommands\Buff.cs" />
     <Compile Include="ConsoleCommands\ConsoleCommand.cs" />
     <Compile Include="ConsoleCommands\ConsoleCommandWithoutArgument.cs" />
     <Compile Include="ConsoleCommands\ConsoleCommandWithArgument.cs" />

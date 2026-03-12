@@ -1057,4 +1057,79 @@ Les couleurs sont stockées sous la forme d'un tableau de valeurs flottantes 'RG
   <data name="CommandSpawnBotHelpAll" xml:space="preserve">
     <value>Utilisez '*' pour générer tous les types de bots disponibles</value>
   </data>
+  <data name="CommandSpawnBotHelpUsageCoordinates" xml:space="preserve">
+    <value>Utilisation supplémentaire: spawnbot &lt;bot_type&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; ou spawnbot &lt;bot_type&gt;,&lt;x&gt;,&lt;y&gt;,&lt;z&gt; - Générer un bot à des coordonnées spécifiques</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsagePlayer" xml:space="preserve">
+    <value>Utilisation supplémentaire: spawnbot &lt;bot_type&gt; player ou spawnbot &lt;bot_type&gt;,player - Générer un bot à la position actuelle du joueur</value>
+  </data>
+  <data name="CommandBuff" xml:space="preserve">
+    <value>buff</value>
+  </data>
+  <data name="CommandBuffHelpTitle" xml:space="preserve">
+    <value>=== Aide Commande Buff ===</value>
+  </data>
+  <data name="CommandBuffHelpUsage" xml:space="preserve">
+    <value>Utilisation:</value>
+  </data>
+  <data name="CommandBuffHelpUsageLine1" xml:space="preserve">
+    <value>  buff &lt;effet&gt; [partie_du_corps] [force]</value>
+  </data>
+  <data name="CommandBuffHelpUsageLine2" xml:space="preserve">
+    <value>  buff &lt;effet&gt;,[partie_du_corps],[force]</value>
+  </data>
+  <data name="CommandBuffHelpExamples" xml:space="preserve">
+    <value>Exemples:</value>
+  </data>
+  <data name="CommandBuffHelpExample1" xml:space="preserve">
+    <value>  buff lightbleed leftarm</value>
+  </data>
+  <data name="CommandBuffHelpExample2" xml:space="preserve">
+    <value>  buff fracture,rightleg</value>
+  </data>
+  <data name="CommandBuffHelpExample3" xml:space="preserve">
+    <value>  buff stun,5</value>
+  </data>
+  <data name="CommandBuffHelpExample4" xml:space="preserve">
+    <value>  buff removeall</value>
+  </data>
+  <data name="CommandBuffHelpExample5" xml:space="preserve">
+    <value>  buff list</value>
+  </data>
+  <data name="CommandBuffHelpExample6" xml:space="preserve">
+    <value>  buff help</value>
+  </data>
+  <data name="CommandBuffHelpBodyParts" xml:space="preserve">
+    <value>Parties du corps: Head, Chest, Stomach, LeftArm, RightArm, LeftLeg, RightLeg, Common</value>
+  </data>
+  <data name="CommandBuffHelpTip" xml:space="preserve">
+    <value>Tapez 'buff list' pour voir tous les effets disponibles</value>
+  </data>
+  <data name="CommandBuffListTitle" xml:space="preserve">
+    <value>=== Effets Disponibles ===</value>
+  </data>
+  <data name="CommandBuffListTip" xml:space="preserve">
+    <value>Astuce: Utilisez 'buff help' pour les informations d'utilisation</value>
+  </data>
+  <data name="CommandBuffErrorUnknownEffect" xml:space="preserve">
+    <value>Effet inconnu: {0}</value>
+  </data>
+  <data name="CommandBuffErrorPlayerNotFound" xml:space="preserve">
+    <value>Joueur non trouvé!</value>
+  </data>
+  <data name="CommandBuffErrorHealthControllerNotFound" xml:space="preserve">
+    <value>Contrôleur de santé non trouvé!</value>
+  </data>
+  <data name="CommandBuffErrorExecutionFailed" xml:space="preserve">
+    <value>Échec de l'exécution: {0}</value>
+  </data>
+  <data name="CommandBuffSuccessApplied" xml:space="preserve">
+    <value>Succès: Appliqué {0}</value>
+  </data>
+  <data name="CommandBuffSuccessTo" xml:space="preserve">
+    <value>à</value>
+  </data>
+  <data name="CommandBuffSuccessWithStrength" xml:space="preserve">
+    <value>avec une force de</value>
+  </data>
 </root>

@@ -2788,5 +2788,230 @@ namespace EFT.Trainer.Properties {
                 return ResourceManager.GetString("CommandSpawnBotHelpAll", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional usage: spawnbot &lt;bot_type&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; - Spawn bot at specific coordinates.
+        /// </summary>
+        internal static string CommandSpawnBotHelpUsageCoordinates {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpUsageCoordinates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional usage: spawnbot &lt;bot_type&gt; player - Spawn bot at player's current position.
+        /// </summary>
+        internal static string CommandSpawnBotHelpUsagePlayer {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpUsagePlayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to buff.
+        /// </summary>
+        internal static string CommandBuff {
+            get {
+                return ResourceManager.GetString("CommandBuff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Buff Command Help ===.
+        /// </summary>
+        internal static string CommandBuffHelpTitle {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usage:.
+        /// </summary>
+        internal static string CommandBuffHelpUsage {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpUsage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff &lt;effect&gt; [bodypart] [strength].
+        /// </summary>
+        internal static string CommandBuffHelpUsageLine1 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpUsageLine1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff &lt;effect&gt;,[bodypart],[strength].
+        /// </summary>
+        internal static string CommandBuffHelpUsageLine2 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpUsageLine2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples:.
+        /// </summary>
+        internal static string CommandBuffHelpExamples {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff lightbleed leftarm.
+        /// </summary>
+        internal static string CommandBuffHelpExample1 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff fracture,rightleg.
+        /// </summary>
+        internal static string CommandBuffHelpExample2 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff stun,5.
+        /// </summary>
+        internal static string CommandBuffHelpExample3 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff removeall.
+        /// </summary>
+        internal static string CommandBuffHelpExample4 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff list.
+        /// </summary>
+        internal static string CommandBuffHelpExample5 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   buff help.
+        /// </summary>
+        internal static string CommandBuffHelpExample6 {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpExample6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Body parts: Head, Chest, Stomach, LeftArm, RightArm, LeftLeg, RightLeg, Common.
+        /// </summary>
+        internal static string CommandBuffHelpBodyParts {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpBodyParts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type &apos;buff list&apos; to see all available effects.
+        /// </summary>
+        internal static string CommandBuffHelpTip {
+            get {
+                return ResourceManager.GetString("CommandBuffHelpTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Available Effects ===.
+        /// </summary>
+        internal static string CommandBuffListTitle {
+            get {
+                return ResourceManager.GetString("CommandBuffListTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tip: Use &apos;buff help&apos; for usage information.
+        /// </summary>
+        internal static string CommandBuffListTip {
+            get {
+                return ResourceManager.GetString("CommandBuffListTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown effect: {0}.
+        /// </summary>
+        internal static string CommandBuffErrorUnknownEffect {
+            get {
+                return ResourceManager.GetString("CommandBuffErrorUnknownEffect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Player not found!.
+        /// </summary>
+        internal static string CommandBuffErrorPlayerNotFound {
+            get {
+                return ResourceManager.GetString("CommandBuffErrorPlayerNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Health controller not found!.
+        /// </summary>
+        internal static string CommandBuffErrorHealthControllerNotFound {
+            get {
+                return ResourceManager.GetString("CommandBuffErrorHealthControllerNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Execution failed: {0}.
+        /// </summary>
+        internal static string CommandBuffErrorExecutionFailed {
+            get {
+                return ResourceManager.GetString("CommandBuffErrorExecutionFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success: Applied {0}.
+        /// </summary>
+        internal static string CommandBuffSuccessApplied {
+            get {
+                return ResourceManager.GetString("CommandBuffSuccessApplied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to to.
+        /// </summary>
+        internal static string CommandBuffSuccessTo {
+            get {
+                return ResourceManager.GetString("CommandBuffSuccessTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to with strength.
+        /// </summary>
+        internal static string CommandBuffSuccessWithStrength {
+            get {
+                return ResourceManager.GetString("CommandBuffSuccessWithStrength", resourceCulture);
+            }
+        }
     }
 }
