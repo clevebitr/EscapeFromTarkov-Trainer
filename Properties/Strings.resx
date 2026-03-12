@@ -151,6 +151,9 @@
   <data name="CommandListSuperRare" xml:space="preserve">
     <value>listsr</value>
   </data>
+  <data name="CommandListSuperRareUI" xml:space="preserve">
+    <value>listsrui</value>
+  </data>
   <data name="CommandLoadDescription" xml:space="preserve">
     <value>Load settings</value>
   </data>
@@ -984,5 +987,89 @@ Colors are stored as an array of 'RGBA' floats</value>
   </data>
   <data name="PropertyElevationAdjustment" xml:space="preserve">
     <value>Elevation adjustment</value>
+  </data>
+  <data name="CommandSpawnBotHelpTitle" xml:space="preserve">
+    <value>=== SpawnBot Help ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsage" xml:space="preserve">
+    <value>Usage: spawnbot &lt;bot_type&gt; | * | help</value>
+  </data>
+  <data name="CommandSpawnBotHelpFactionTypes" xml:space="preserve">
+    <value>=== Faction Types ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsec" xml:space="preserve">
+    <value>pmcUSEC/exUsec - USEC mercenaries</value>
+  </data>
+  <data name="CommandSpawnBotHelpBear" xml:space="preserve">
+    <value>pmcBEAR - BEAR special forces</value>
+  </data>
+  <data name="CommandSpawnBotHelpAssault" xml:space="preserve">
+    <value>assault/assaultGroup - Regular Scavs</value>
+  </data>
+  <data name="CommandSpawnBotHelpMarksman" xml:space="preserve">
+    <value>marksman - Sniper Scavs</value>
+  </data>
+  <data name="CommandSpawnBotHelpCursedAssault" xml:space="preserve">
+    <value>cursedAssault - Cursed Scavs</value>
+  </data>
+  <data name="CommandSpawnBotHelpInfectedAssault" xml:space="preserve">
+    <value>infectedAssault - Infected Scavs</value>
+  </data>
+  <data name="CommandSpawnBotHelpBosses" xml:space="preserve">
+    <value>=== Bosses &amp; Followers ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpTagilla" xml:space="preserve">
+    <value>bossTagilla/bossTagillaAgro - Tagilla (Factory)</value>
+  </data>
+  <data name="CommandSpawnBotHelpSanitar" xml:space="preserve">
+    <value>bossSanitar/followerSanitar - Sanitar (Shoreline)</value>
+  </data>
+  <data name="CommandSpawnBotHelpGluhar" xml:space="preserve">
+    <value>bossGluhar + followerGluhar* - Gluhar (Reserve)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKilla" xml:space="preserve">
+    <value>bossKilla/bossKillaAgro - Killa (Interchange)</value>
+  </data>
+  <data name="CommandSpawnBotHelpBoar" xml:space="preserve">
+    <value>bossBoar + followerBoar* - Boar (Lighthouse)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKolontay" xml:space="preserve">
+    <value>bossKolontay + followerKolontay* - Kolontay (Streets)</value>
+  </data>
+  <data name="CommandSpawnBotHelpZryachiy" xml:space="preserve">
+    <value>bossZryachiy - Zryachiy (Lighthouse)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKnight" xml:space="preserve">
+    <value>bossKnight - Knight (Multiple maps)</value>
+  </data>
+  <data name="CommandSpawnBotHelpPartisan" xml:space="preserve">
+    <value>bossPartisan - Partisan (Multiple maps)</value>
+  </data>
+  <data name="CommandSpawnBotHelpCultists" xml:space="preserve">
+    <value>=== Cultists ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPriest" xml:space="preserve">
+    <value>sectantPriest - Cultist Priest</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantWarrior" xml:space="preserve">
+    <value>sectantWarrior - Cultist Warrior</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPrizrak" xml:space="preserve">
+    <value>sectantPrizrak - Phantom Cultist</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPredvestnik" xml:space="preserve">
+    <value>sectantPredvestnik - Herald Cultist</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantOni" xml:space="preserve">
+    <value>sectantOni - Oni Mask Cultist</value>
+  </data>
+  <data name="CommandSpawnBotHelpSpecialTypes" xml:space="preserve">
+    <value>=== Special Types ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSkier" xml:space="preserve">
+    <value>skier - Skiier/Snow variant Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpAll" xml:space="preserve">
+    <value>Use '*' to spawn all available bot types</value>
   </data>
 </root>

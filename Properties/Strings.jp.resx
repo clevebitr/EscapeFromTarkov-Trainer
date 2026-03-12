@@ -970,4 +970,88 @@
   <data name="FeatureAirDropDescription" xml:space="preserve">
     <value>プレイヤーの位置でエアドロップを発動</value>
   </data>
+  <data name="CommandSpawnBotHelpTitle" xml:space="preserve">
+    <value>=== SpawnBot ヘルプ ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsage" xml:space="preserve">
+    <value>使用方法: spawnbot &lt;bot_type&gt; | * | help</value>
+  </data>
+  <data name="CommandSpawnBotHelpFactionTypes" xml:space="preserve">
+    <value>=== 陣営タイプ ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsec" xml:space="preserve">
+    <value>pmcUSEC/exUsec - USEC 傭兵</value>
+  </data>
+  <data name="CommandSpawnBotHelpBear" xml:space="preserve">
+    <value>pmcBEAR - BEAR 特殊部隊</value>
+  </data>
+  <data name="CommandSpawnBotHelpAssault" xml:space="preserve">
+    <value>assault/assaultGroup - 通常スカブ</value>
+  </data>
+  <data name="CommandSpawnBotHelpMarksman" xml:space="preserve">
+    <value>marksman - スナイパースカブ</value>
+  </data>
+  <data name="CommandSpawnBotHelpCursedAssault" xml:space="preserve">
+    <value>cursedAssault - 呪いスカブ</value>
+  </data>
+  <data name="CommandSpawnBotHelpInfectedAssault" xml:space="preserve">
+    <value>infectedAssault - 感染スカブ</value>
+  </data>
+  <data name="CommandSpawnBotHelpBosses" xml:space="preserve">
+    <value>=== BOSS とフォロワー ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpTagilla" xml:space="preserve">
+    <value>bossTagilla/bossTagillaAgro - タギラ (工場)</value>
+  </data>
+  <data name="CommandSpawnBotHelpSanitar" xml:space="preserve">
+    <value>bossSanitar/followerSanitar - サニター (海岸線)</value>
+  </data>
+  <data name="CommandSpawnBotHelpGluhar" xml:space="preserve">
+    <value>bossGluhar + followerGluhar* - グルハー (予備基地)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKilla" xml:space="preserve">
+    <value>bossKilla/bossKillaAgro - キラー (立体交差)</value>
+  </data>
+  <data name="CommandSpawnBotHelpBoar" xml:space="preserve">
+    <value>bossBoar + followerBoar* - ボア (灯台)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKolontay" xml:space="preserve">
+    <value>bossKolontay + followerKolontay* - コロンタイ (通り)</value>
+  </data>
+  <data name="CommandSpawnBotHelpZryachiy" xml:space="preserve">
+    <value>bossZryachiy - ズリャチー (灯台)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKnight" xml:space="preserve">
+    <value>bossKnight - ナイト (複数マップ)</value>
+  </data>
+  <data name="CommandSpawnBotHelpPartisan" xml:space="preserve">
+    <value>bossPartisan - パルチザン (複数マップ)</value>
+  </data>
+  <data name="CommandSpawnBotHelpCultists" xml:space="preserve">
+    <value>=== カルト教徒 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPriest" xml:space="preserve">
+    <value>sectantPriest - カルト司祭</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantWarrior" xml:space="preserve">
+    <value>sectantWarrior - カルト戦士</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPrizrak" xml:space="preserve">
+    <value>sectantPrizrak - 幻影カルト</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPredvestnik" xml:space="preserve">
+    <value>sectantPredvestnik - 先駆者カルト</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantOni" xml:space="preserve">
+    <value>sectantOni - 鬼面カルト</value>
+  </data>
+  <data name="CommandSpawnBotHelpSpecialTypes" xml:space="preserve">
+    <value>=== 特殊タイプ ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSkier" xml:space="preserve">
+    <value>skier - スキーヤー/雪地形スカブ</value>
+  </data>
+  <data name="CommandSpawnBotHelpAll" xml:space="preserve">
+    <value>'*' を使用して利用可能なすべてのボットタイプを生成</value>
+  </data>
 </root>

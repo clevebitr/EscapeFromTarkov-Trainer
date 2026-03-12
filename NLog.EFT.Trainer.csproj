@@ -14,6 +14,7 @@
     <TargetFrameworkProfile />
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
+    <RuntimeIdentifiers>win</RuntimeIdentifiers>
     <EFTBasePath>C:\EFT\Escape From Tarkov\Client.0.16.9.0.40087</EFTBasePath>
     <EFTDataPath>$(EFTBasePath)\EscapeFromTarkov_Data</EFTDataPath>
     <EFTManagedPath>$(EFTDataPath)\Managed</EFTManagedPath>

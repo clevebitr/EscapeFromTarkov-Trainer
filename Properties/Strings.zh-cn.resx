@@ -986,4 +986,88 @@
   <data name="PropertyElevationAdjustment" xml:space="preserve">
     <value>高度调节</value>
   </data>
+  <data name="CommandSpawnBotHelpTitle" xml:space="preserve">
+    <value>=== SpawnBot 帮助 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsage" xml:space="preserve">
+    <value>使用方法: spawnbot &lt;bot_type&gt; | * | help</value>
+  </data>
+  <data name="CommandSpawnBotHelpFactionTypes" xml:space="preserve">
+    <value>=== 阵营类型 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsec" xml:space="preserve">
+    <value>pmcUSEC/exUsec - USEC 雇佣兵</value>
+  </data>
+  <data name="CommandSpawnBotHelpBear" xml:space="preserve">
+    <value>pmcBEAR - BEAR 特种部队</value>
+  </data>
+  <data name="CommandSpawnBotHelpAssault" xml:space="preserve">
+    <value>assault/assaultGroup - 普通 Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpMarksman" xml:space="preserve">
+    <value>marksman - 狙击手 Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpCursedAssault" xml:space="preserve">
+    <value>cursedAssault - 诅咒 Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpInfectedAssault" xml:space="preserve">
+    <value>infectedAssault - 感染 Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpBosses" xml:space="preserve">
+    <value>=== BOSS 及追随者 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpTagilla" xml:space="preserve">
+    <value>bossTagilla/bossTagillaAgro - Tagilla (工厂)</value>
+  </data>
+  <data name="CommandSpawnBotHelpSanitar" xml:space="preserve">
+    <value>bossSanitar/followerSanitar - Sanitar (海岸线)</value>
+  </data>
+  <data name="CommandSpawnBotHelpGluhar" xml:space="preserve">
+    <value>bossGluhar + followerGluhar* - Gluhar (储备站)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKilla" xml:space="preserve">
+    <value>bossKilla/bossKillaAgro - Killa (立交桥)</value>
+  </data>
+  <data name="CommandSpawnBotHelpBoar" xml:space="preserve">
+    <value>bossBoar + followerBoar* - Boar (灯塔)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKolontay" xml:space="preserve">
+    <value>bossKolontay + followerKolontay* - Kolontay (街道)</value>
+  </data>
+  <data name="CommandSpawnBotHelpZryachiy" xml:space="preserve">
+    <value>bossZryachiy - Zryachiy (灯塔)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKnight" xml:space="preserve">
+    <value>bossKnight - Knight (多张地图)</value>
+  </data>
+  <data name="CommandSpawnBotHelpPartisan" xml:space="preserve">
+    <value>bossPartisan - Partisan (多张地图)</value>
+  </data>
+  <data name="CommandSpawnBotHelpCultists" xml:space="preserve">
+    <value>=== 邪教徒 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPriest" xml:space="preserve">
+    <value>sectantPriest - 邪教徒牧师</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantWarrior" xml:space="preserve">
+    <value>sectantWarrior - 邪教徒战士</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPrizrak" xml:space="preserve">
+    <value>sectantPrizrak - 幻影邪教徒</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPredvestnik" xml:space="preserve">
+    <value>sectantPredvestnik - 先驱邪教徒</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantOni" xml:space="preserve">
+    <value>sectantOni - 鬼面邪教徒</value>
+  </data>
+  <data name="CommandSpawnBotHelpSpecialTypes" xml:space="preserve">
+    <value>=== 特殊类型 ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSkier" xml:space="preserve">
+    <value>skier - 滑雪者/雪地变种 Scav</value>
+  </data>
+  <data name="CommandSpawnBotHelpAll" xml:space="preserve">
+    <value>使用 '*' 生成所有可用的机器人类型</value>
+  </data>
 </root>

@@ -2536,5 +2536,257 @@ namespace EFT.Trainer.Properties {
                 return ResourceManager.GetString("TextSeparator", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === SpawnBot Help ===.
+        /// </summary>
+        internal static string CommandSpawnBotHelpTitle {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usage: spawnbot &lt;bot_type&gt; | * | help.
+        /// </summary>
+        internal static string CommandSpawnBotHelpUsage {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpUsage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Faction Types ===.
+        /// </summary>
+        internal static string CommandSpawnBotHelpFactionTypes {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpFactionTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to pmcUSEC/exUsec - USEC mercenaries.
+        /// </summary>
+        internal static string CommandSpawnBotHelpUsec {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpUsec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to pmcBEAR - BEAR special forces.
+        /// </summary>
+        internal static string CommandSpawnBotHelpBear {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpBear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to assault/assaultGroup - Regular Scavs.
+        /// </summary>
+        internal static string CommandSpawnBotHelpAssault {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpAssault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to marksman - Sniper Scavs.
+        /// </summary>
+        internal static string CommandSpawnBotHelpMarksman {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpMarksman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cursedAssault - Cursed Scavs.
+        /// </summary>
+        internal static string CommandSpawnBotHelpCursedAssault {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpCursedAssault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to infectedAssault - Infected Scavs.
+        /// </summary>
+        internal static string CommandSpawnBotHelpInfectedAssault {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpInfectedAssault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Bosses &amp; Followers ===.
+        /// </summary>
+        internal static string CommandSpawnBotHelpBosses {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpBosses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossTagilla/bossTagillaAgro - Tagilla (Factory).
+        /// </summary>
+        internal static string CommandSpawnBotHelpTagilla {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpTagilla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossSanitar/followerSanitar - Sanitar (Shoreline).
+        /// </summary>
+        internal static string CommandSpawnBotHelpSanitar {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSanitar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossGluhar + followerGluhar* - Gluhar (Reserve).
+        /// </summary>
+        internal static string CommandSpawnBotHelpGluhar {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpGluhar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossKilla/bossKillaAgro - Killa (Interchange).
+        /// </summary>
+        internal static string CommandSpawnBotHelpKilla {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpKilla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossBoar + followerBoar* - Boar (Lighthouse).
+        /// </summary>
+        internal static string CommandSpawnBotHelpBoar {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpBoar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossKolontay + followerKolontay* - Kolontay (Streets).
+        /// </summary>
+        internal static string CommandSpawnBotHelpKolontay {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpKolontay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossZryachiy - Zryachiy (Lighthouse).
+        /// </summary>
+        internal static string CommandSpawnBotHelpZryachiy {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpZryachiy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossKnight - Knight (Multiple maps).
+        /// </summary>
+        internal static string CommandSpawnBotHelpKnight {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpKnight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bossPartisan - Partisan (Multiple maps).
+        /// </summary>
+        internal static string CommandSpawnBotHelpPartisan {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpPartisan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Cultists ===.
+        /// </summary>
+        internal static string CommandSpawnBotHelpCultists {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpCultists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sectantPriest - Cultist Priest.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSectantPriest {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSectantPriest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sectantWarrior - Cultist Warrior.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSectantWarrior {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSectantWarrior", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sectantPrizrak - Phantom Cultist.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSectantPrizrak {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSectantPrizrak", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sectantPredvestnik - Herald Cultist.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSectantPredvestnik {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSectantPredvestnik", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sectantOni - Oni Mask Cultist.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSectantOni {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSectantOni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to === Special Types ===.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSpecialTypes {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSpecialTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to skier - Skiier/Snow variant Scav.
+        /// </summary>
+        internal static string CommandSpawnBotHelpSkier {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpSkier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use '*' to spawn all available bot types.
+        /// </summary>
+        internal static string CommandSpawnBotHelpAll {
+            get {
+                return ResourceManager.GetString("CommandSpawnBotHelpAll", resourceCulture);
+            }
+        }
     }
 }

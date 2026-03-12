@@ -973,4 +973,88 @@ Les couleurs sont stockées sous la forme d'un tableau de valeurs flottantes 'RG
   <data name="PropertyElevationAdjustment" xml:space="preserve">
     <value>Ajustement de l'élévation</value>
   </data>
+  <data name="CommandSpawnBotHelpTitle" xml:space="preserve">
+    <value>=== Aide SpawnBot ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsage" xml:space="preserve">
+    <value>Utilisation: spawnbot &lt;bot_type&gt; | * | help</value>
+  </data>
+  <data name="CommandSpawnBotHelpFactionTypes" xml:space="preserve">
+    <value>=== Types de faction ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpUsec" xml:space="preserve">
+    <value>pmcUSEC/exUsec - Mercenaire USEC</value>
+  </data>
+  <data name="CommandSpawnBotHelpBear" xml:space="preserve">
+    <value>pmcBEAR - Forces spéciales BEAR</value>
+  </data>
+  <data name="CommandSpawnBotHelpAssault" xml:space="preserve">
+    <value>assault/assaultGroup - Scav normal</value>
+  </data>
+  <data name="CommandSpawnBotHelpMarksman" xml:space="preserve">
+    <value>marksman - Scav sniper</value>
+  </data>
+  <data name="CommandSpawnBotHelpCursedAssault" xml:space="preserve">
+    <value>cursedAssault - Scav maudit</value>
+  </data>
+  <data name="CommandSpawnBotHelpInfectedAssault" xml:space="preserve">
+    <value>infectedAssault - Scav infecté</value>
+  </data>
+  <data name="CommandSpawnBotHelpBosses" xml:space="preserve">
+    <value>=== Boss et followers ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpTagilla" xml:space="preserve">
+    <value>bossTagilla/bossTagillaAgro - Tagilla (Factory)</value>
+  </data>
+  <data name="CommandSpawnBotHelpSanitar" xml:space="preserve">
+    <value>bossSanitar/followerSanitar - Sanitar (Shoreline)</value>
+  </data>
+  <data name="CommandSpawnBotHelpGluhar" xml:space="preserve">
+    <value>bossGluhar + followerGluhar* - Gluhar (Reserve)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKilla" xml:space="preserve">
+    <value>bossKilla/bossKillaAgro - Killa (Interchange)</value>
+  </data>
+  <data name="CommandSpawnBotHelpBoar" xml:space="preserve">
+    <value>bossBoar + followerBoar* - Boar (Lighthouse)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKolontay" xml:space="preserve">
+    <value>bossKolontay + followerKolontay* - Kolontay (Streets)</value>
+  </data>
+  <data name="CommandSpawnBotHelpZryachiy" xml:space="preserve">
+    <value>bossZryachiy - Zryachiy (Lighthouse)</value>
+  </data>
+  <data name="CommandSpawnBotHelpKnight" xml:space="preserve">
+    <value>bossKnight - Knight (multiple maps)</value>
+  </data>
+  <data name="CommandSpawnBotHelpPartisan" xml:space="preserve">
+    <value>bossPartisan - Partisan (multiple maps)</value>
+  </data>
+  <data name="CommandSpawnBotHelpCultists" xml:space="preserve">
+    <value>=== Cultistes ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPriest" xml:space="preserve">
+    <value>sectantPriest - Prêtre cultiste</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantWarrior" xml:space="preserve">
+    <value>sectantWarrior - Guerrier cultiste</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPrizrak" xml:space="preserve">
+    <value>sectantPrizrak - Cultiste fantôme</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantPredvestnik" xml:space="preserve">
+    <value>sectantPredvestnik - Cultiste précurseur</value>
+  </data>
+  <data name="CommandSpawnBotHelpSectantOni" xml:space="preserve">
+    <value>sectantOni - Cultiste masque de démon</value>
+  </data>
+  <data name="CommandSpawnBotHelpSpecialTypes" xml:space="preserve">
+    <value>=== Types spéciaux ===</value>
+  </data>
+  <data name="CommandSpawnBotHelpSkier" xml:space="preserve">
+    <value>skier - Skieur/variante Scav de neige</value>
+  </data>
+  <data name="CommandSpawnBotHelpAll" xml:space="preserve">
+    <value>Utilisez '*' pour générer tous les types de bots disponibles</value>
+  </data>
 </root>

@@ -25,6 +25,13 @@ internal class SpawnBot : ConsoleCommandWithArgument
 			return;
 
 		var search = matchGroup.Value.Trim();
+
+		if (search.Equals("help", StringComparison.OrdinalIgnoreCase))
+		{
+			ShowHelp();
+			return;
+		}
+
 		var bots = FindBots(search);
 
 		switch (bots.Length)
@@ -42,6 +49,44 @@ internal class SpawnBot : ConsoleCommandWithArgument
 		}
 
 		SpawnBots(bots);
+	}
+
+	private void ShowHelp()
+	{
+		AddConsoleLog(Strings.CommandSpawnBotHelpTitle.Cyan());
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpUsage.Green());
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpFactionTypes.Yellow());
+		AddConsoleLog(Strings.CommandSpawnBotHelpUsec);
+		AddConsoleLog(Strings.CommandSpawnBotHelpBear);
+		AddConsoleLog(Strings.CommandSpawnBotHelpAssault);
+		AddConsoleLog(Strings.CommandSpawnBotHelpMarksman);
+		AddConsoleLog(Strings.CommandSpawnBotHelpCursedAssault);
+		AddConsoleLog(Strings.CommandSpawnBotHelpInfectedAssault);
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpBosses.Yellow());
+		AddConsoleLog(Strings.CommandSpawnBotHelpTagilla);
+		AddConsoleLog(Strings.CommandSpawnBotHelpSanitar);
+		AddConsoleLog(Strings.CommandSpawnBotHelpGluhar);
+		AddConsoleLog(Strings.CommandSpawnBotHelpKilla);
+		AddConsoleLog(Strings.CommandSpawnBotHelpBoar);
+		AddConsoleLog(Strings.CommandSpawnBotHelpKolontay);
+		AddConsoleLog(Strings.CommandSpawnBotHelpZryachiy);
+		AddConsoleLog(Strings.CommandSpawnBotHelpKnight);
+		AddConsoleLog(Strings.CommandSpawnBotHelpPartisan);
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpCultists.Yellow());
+		AddConsoleLog(Strings.CommandSpawnBotHelpSectantPriest);
+		AddConsoleLog(Strings.CommandSpawnBotHelpSectantWarrior);
+		AddConsoleLog(Strings.CommandSpawnBotHelpSectantPrizrak);
+		AddConsoleLog(Strings.CommandSpawnBotHelpSectantPredvestnik);
+		AddConsoleLog(Strings.CommandSpawnBotHelpSectantOni);
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpSpecialTypes.Yellow());
+		AddConsoleLog(Strings.CommandSpawnBotHelpSkier);
+		AddConsoleLog("");
+		AddConsoleLog(Strings.CommandSpawnBotHelpAll.Cyan());
 	}
 
 	private static void SpawnBots(string[] bots)
