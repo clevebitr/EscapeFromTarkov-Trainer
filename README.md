@@ -122,7 +122,7 @@ This trainer hooks into the command system, so you can easily setup features usi
 | save       |                     |         | Save settings to `trainer.ini`       |
 | savetl     | `[filename]`        |         | Save current tracklist to file       |
 | spawn      | `[name]`            |         | Spawn object in front of player      |
-| spawnbot   | `[name]` or `*`     |         | Spawn a bot, ex `spawnbot bossKilla` |
+| spawnbot   | `[name],[player],[coordinate]` or `*`     |         | Spawn a bot, ex `spawnbot bossKilla,[player],[100,1,100]` |
 | spawnhi    |                     |         | Spawn required hideout items         |
 | spawnqi    |                     |         | Spawn items-to-find in active quests |
 | stamina    | `on` or `off`       | `off`   | Enable/Disable unlimited stamina     |
@@ -138,9 +138,102 @@ This trainer hooks into the command system, so you can easily setup features usi
 | tracklist  |                     |         | Show tracked items                   |
 | untrack    | `[name]` or `*`     |         | Untrack a `name` or `*` for all      |
 | wallshoot  | `on` or `off`       | `on`    | Enable/Disable shoot through walls   |
+| buff       | `[buffname] [bodypart] [parameter]`  |    | Apply a buff to player, ex: `buff pain`, `buff fracture LeftArm`, `buff stim 1` |
+
+## Buff Command
+
+The `buff` command is used to apply various effects to the player character in the game.
+
+### Usage
+- `buff help` - Show help information
+- `buff list` - Show all available effects
+- `buff <effect name>` - Apply the specified effect
+- `buff <effect name> <body part>` - Apply the specified effect to a specific body part
+- `buff <effect name> <parameter>` - Apply the specified effect with a parameter
+- `buff <effect name> <body part> <parameter>` - Apply the specified effect to a specific body part with a parameter
+
+### Available Effect Categories
+
+1. **Bleeding**
+   - `lightbleed`, `lightbleeding` - Light bleeding
+   - `heavybleed`, `heavybleeding` - Heavy bleeding
+   - `bleed` - Light bleeding
+
+2. **Injuries**
+   - `fracture` - Fracture
+
+3. **Pain/Stun**
+   - `pain` - Pain effect
+   - `tremor` - Tremor effect
+   - `stun` - Stun effect
+   - `contusion` - Contusion effect
+   - `disorientation` - Disorientation effect
+
+4. **Toxins**
+   - `intoxication`, `poison` - Intoxication effect
+   - `lethalintoxication` - Lethal intoxication effect
+   - `radexposure`, `radiation` - Radiation exposure effect
+
+5. **Medicines**
+   - `painkiller`, `stop`, `pills` - Painkiller effect
+   - `stim`, `stimulator` - Stimulator effect
+   - `healthboost` - Health boost effect
+   - `regeneration` - Regeneration effect
+
+6. **Special**
+   - `misfire` - Weapon misfire effect
+   - `staminazero` - Stamina zero effect
+   - `fatigue` - Fatigue effect
+   - `berserk` - Berserk effect
+   - `paniceffect` - Panic effect
+   - `sandingscreen` - Sanding screen effect
+   - `tunnelvision` - Tunnel vision effect
+   - `dehydration`, `dehydrate`, `thirst` - Dehydration effect
+
+7. **Visual**
+   - `flash` - Flash effect
+
+8. **Weight**
+   - `encumbered` - Encumbered status
+   - `overencumbered` - Over encumbered status
+
+9. **Infection**
+   - `zombieinfection` - Zombie infection effect
+
+10. **Cleansing**
+    - `remove` - Remove negative effects
+    - `removeall` - Remove all effects
+    - `fullheal` - Full health regeneration
+    - `restorebodypart` - Restore body part
+
+### Body Parts
+
+Available body parts:
+- `Head` - Head
+- `Thorax` - Thorax
+- `Stomach` - Stomach
+- `LeftArm` - Left Arm
+- `RightArm` - Right Arm
+- `LeftLeg` - Left Leg
+- `RightLeg` - Right Leg
+- `Common` - Full body (default)
+
+### Examples
+
+- `buff pain` - Apply pain effect to full body
+- `buff fracture LeftArm` - Apply fracture effect to left arm
+- `buff stim 1` - Apply stimulator effect with index 1
+- `buff fullheal` - Restore full health
+- `buff removeall` - Remove all effects
+
+### Notes
+
+- Some effects require parameters, such as `stim` which can specify different stimulator types
+- Effect names are case-insensitive
+- If the specified effect does not exist, the command will try to find and apply the corresponding effect type through reflection
 
 ## Translations
 
-This trainer comes in English but we also provide French, Japanese and Chinese simplified versions. You can use the [Universal Installer](https://github.com/sailro/EscapeFromTarkov-Trainer/releases) to specify your language, using `.\Installer -l zh-cn` for Chinese simplified for instance.
+This trainer comes in English but we also provide French, Japanese and Chinese simplified versions. You can use the [Universal Installer](https://github.com/sailro/EscapeFromTarkov-Trainer/releases) to specify your language, using `./Installer -l zh-cn` for Chinese simplified for instance.
 
 You can also tweak or add your own language by having a look [here](https://github.com/sailro/EscapeFromTarkov-Trainer/issues/541).
