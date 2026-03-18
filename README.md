@@ -3,6 +3,8 @@
 
 [![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-lightgrey?logo=github&style=flat-square)](https://github.com/sponsors/sailro)
 
+[zh-cn](https://github.com/clevebitr/EscapeFromTarkov-Trainer/blob/master/README-zh.md)
+
 # This project has been discontinued
 > After 5 years of proud service, this project has been discontinued. With the release of version 1.0 and, above all, the switch to IL2CPP technology, internal modding is going to be completely different (and much more complex).
 > It has been really interesting to find techniques for modding the game, compiling on the go and allowing features to be added easily. Thanks !
