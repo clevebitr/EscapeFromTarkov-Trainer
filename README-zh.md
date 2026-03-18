@@ -231,21 +231,6 @@
 - 效果名称不区分大小写
 - 如果指定的效果不存在，命令会尝试通过反射查找并应用对应的效果类型
 
-## 语言切换
-
-您可以在游戏中通过以下方式切换语言：
-
-1. 使用通用安装程序指定语言：
-   - 英文：`./Installer -l en`
-   - 中文简体：`./Installer -l zh-cn`
-   - 法语：`./Installer -l fr`
-   - 日语：`./Installer -l ja`
-
-2. 手动修改语言设置：
-   - 打开 `trainer.ini` 文件
-   - 找到 `[General]` 部分
-   - 修改 `Language` 值为所需的语言代码（例如 `zh-cn` 表示中文简体）
-
 ## 翻译
 
 该训练器默认使用英文，但我们也提供法语、日语和中文简体版本。您可以使用[通用安装程序](https://github.com/sailro/EscapeFromTarkov-Trainer/releases)指定您的语言，例如使用 `./Installer -l zh-cn` 表示中文简体。
